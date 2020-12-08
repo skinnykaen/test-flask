@@ -15,7 +15,7 @@ def hello_world():
 
 @app.route('/login', methods=['GET','POST'])
 def login_page():
-    login = request.form.get('login')
+    login = request.form.get('email')
     password = request.form.get('password')
 
     if login and password:
@@ -36,7 +36,7 @@ def login_page():
 
 @app.route('/register', methods=['GET','POST'])
 def register():
-    login = request.form.get('login')
+    login = request.form.get('email')
     password = request.form.get('password')
     password2 = request.form.get('password2')
 

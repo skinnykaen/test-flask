@@ -10,30 +10,19 @@
 </head>
 <body>
     <h1>Register page</h1>
-
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-      <ul class=flashes>
-      {% for message in messages %}
-        <li>{{ message }}</li>
-      {% endfor %}
-      </ul>
-    {% endif %}
-  {% endwith %}
-
     <form method="POST" >
         <table>
             <tr>
-                <td>Login</td>
-                <td><input type="text" name="login"></td>
+                <td>Email</td>
+                <td><input type="text" name="email"></td>
             </tr>
             <tr>
                 <td>Password</td>
-                <input type="text" type="password" name="password">
+                <td><input type="text" type="password" name="password"></td>
             </tr>
             <tr>
                 <td>Password retype</td>
-                <input type="text" type="password" name="password2">
+                <td><input type="text" type="password" name="password2"></td>
             </tr>
             <tr>
                 <td><a href="{{url_for('login_page')}">Login</a></td>

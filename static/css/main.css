@@ -1,0 +1,42 @@
+.content{
+    padding: 0 20%;
+}
+
+.content .page-header{
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.content .page-header nav{
+    display: block;
+}
+
+.content .page-header nav ul{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.content .page-header nav ul li{
+    display: block;
+}
+
+.content .page-header nav ul a{
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.form-group{
+    margin: 10px;
+}
+
+.btn-link{
+    margin-left: 10px;
+}
+
+.form{
+    border-bottom: 1px solid #eeeeee;
+}
